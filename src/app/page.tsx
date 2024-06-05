@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Header from "./componenets/header";
+import Trending from "./componenets/trending";
 
 export default function Home() {
   return (
-    <main className="bg-gray-950">
+    <main className="bg-gradient-to-br from-gray-950 to-gray-900">
       <Header />
-      <div className="w-9/12 mx-auto">
-        <div>Home</div>
+      <div className="w-7/12  mx-auto">
+        <Trending />
       </div>
     </main>
   );
