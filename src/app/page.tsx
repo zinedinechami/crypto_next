@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="bg-gradient-to-br from-gray-950 to-gray-900">
       <Header />
-      <div className="w-7/12  mx-auto">
+      <div className="w-8/12  mx-auto">
         <Trending />
         <CoinsTable />
       </div>
