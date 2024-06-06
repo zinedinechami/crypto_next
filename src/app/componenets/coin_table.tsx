@@ -2,7 +2,9 @@ export default function CoinsTable() {
   return (
     <>
       <section className="pb-20">
-        <h1 className="text-xl mb-6 ">Coin Prices by Market Cap</h1>
+        <h1 className="text-base mb-4 text-gray-300 ">
+          Cryptocurrency Prices by Market Cap
+        </h1>
         <div className="rounded-lg overflow-hidden border border-gray-900">
           <table className="w-full  bg-gray-950  border-gray-900 rounded-lg">
             <thead className="text-gray-400 border-b border-gray-800 rounded-lg text-sm bg-gray-900">
@@ -16,7 +18,31 @@ export default function CoinsTable() {
               </tr>
             </thead>
             <tbody className="rounded-md text-center text-sm font-bold">
-              <tr className="hover:bg-gray-900/50 transition-colors">
+              <tr className="hover:bg-gray-900/50 transition-colors border-b border-gray-900">
+                <td className="py-6">Name</td>
+                <td>Price</td>
+                <td>1h %</td>
+                <td>24h %</td>
+                <td>7d %</td>
+                <td>Market Cap</td>
+              </tr>
+              <tr className="hover:bg-gray-900/50 transition-colors border-b border-gray-900">
+                <td className="py-6">Name</td>
+                <td>Price</td>
+                <td>1h %</td>
+                <td>24h %</td>
+                <td>7d %</td>
+                <td>Market Cap</td>
+              </tr>
+              <tr className="hover:bg-gray-900/50 transition-colors  border-b border-gray-900">
+                <td className="py-6">Name</td>
+                <td>Price</td>
+                <td>1h %</td>
+                <td>24h %</td>
+                <td>7d %</td>
+                <td>Market Cap</td>
+              </tr>
+              <tr className="hover:bg-gray-900/50 transition-colors border-b border-gray-900">
                 <td className="py-6">Name</td>
                 <td>Price</td>
                 <td>1h %</td>

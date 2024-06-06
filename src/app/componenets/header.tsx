@@ -1,8 +1,8 @@
 export default function Header() {
   return (
     <>
-      <nav className="w-full flex h-16  border-gray-900 border-b relative bg-gray-950">
-        <div className="mt-4 ml-20 flex">
+      <nav className="w-full flex h-16  border-gray-900 border-b sticky top-0 z-50  backdrop-blur-md">
+        <div className="mt-4 ml-10 flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -17,13 +17,13 @@ export default function Header() {
 
           <h1 className=" font-bold text-xl text-gray-300">CoinsWatch</h1>
         </div>
-        <div className="absolute right-20 top-4">
+        <div className="absolute right-10 top-4">
           <input
             className="h-8 rounded mr-6 bg-gray-900 border border-gray-800"
             type="text"
           />
 
-          <button className="px-4 py-1 bg-gray-200 border border-gray-400 text-sm font-bold text-gray-950 rounded">
+          <button className="px-4 py-1 bg-blue-500  text-sm font-bold text-gray-50 rounded">
             Sign in
           </button>
         </div>
