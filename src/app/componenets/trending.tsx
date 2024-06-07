@@ -1,4 +1,27 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { TrendingCoin } from "../config/api";
+
 export default function Trending() {
+  const [TrendingData, setTrendingData] = useState("");
+
+  useEffect(() => {
+    fetch(TrendingCoin, {
+      method: "GET",
+      headers: { accept: "application/json" },
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setTrendingData(data.body);
+      });
+  });
+
+  // do a map with the article, find a way to only show the 6 first in the trending list
+
   return (
     <>
       <section className="pt-6 pb-6 ">
