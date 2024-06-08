@@ -9,6 +9,7 @@ export default function CoinsTable() {
           <table className="w-full  bg-gray-950  border-gray-900 rounded-lg">
             <thead className="text-gray-400 border-b border-gray-800 rounded-lg text-sm bg-gray-900">
               <tr className="">
+                <th>#</th>
                 <th className="py-3">NAME</th>
                 <th>PRICE</th>
                 <th>1h %</th>
@@ -19,6 +20,7 @@ export default function CoinsTable() {
             </thead>
             <tbody className="rounded-md text-center text-sm font-bold">
               <tr className="hover:bg-gray-900/50 transition-colors border-b border-gray-900">
+                <td>1</td>
                 <td className="py-6">Name</td>
                 <td>Price</td>
                 <td>1h %</td>
@@ -27,6 +29,7 @@ export default function CoinsTable() {
                 <td>Market Cap</td>
               </tr>
               <tr className="hover:bg-gray-900/50 transition-colors border-b border-gray-900">
+                <td>1</td>
                 <td className="py-6">Name</td>
                 <td>Price</td>
                 <td>1h %</td>
@@ -35,6 +38,7 @@ export default function CoinsTable() {
                 <td>Market Cap</td>
               </tr>
               <tr className="hover:bg-gray-900/50 transition-colors  border-b border-gray-900">
+                <td>1</td>
                 <td className="py-6">Name</td>
                 <td>Price</td>
                 <td>1h %</td>
@@ -43,6 +47,7 @@ export default function CoinsTable() {
                 <td>Market Cap</td>
               </tr>
               <tr className="hover:bg-gray-900/50 transition-colors border-b border-gray-900">
+                <td>1</td>
                 <td className="py-6">Name</td>
                 <td>Price</td>
                 <td>1h %</td>

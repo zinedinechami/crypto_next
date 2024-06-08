@@ -29,22 +29,22 @@ export default function Trending() {
 
   return (
     <>
-      <section className="pt-6 pb-6 ">
+      <section className="pt-6 pb-6 pl-3 ">
         <h1 className="text-base mb-4 text-gray-300 ">Trending Coins</h1>
         <div className="flex flex-wrap justify-between w-full">
           <article className="w-80 h-24 mb-2 flex rounded-md border border-gray-900 bg-gray-950 hover:bg-gray-900/50 transition-colors">
             <div className="m-4 flex">
-              <div className="w-16 h-16 rounded-lg bg-white "></div>
-              <div className="ml-4">
-                <p>Bitcoin</p>
+              <div className="w-16 h-16 rounded-full bg-white "></div>
+              <div className="ml-6">
+                <p className="font-bold">Bitcoin</p>
                 <p className="text-sm p-1 bg-gray-800 text-center rounded-lg my-1">
                   BTC
                 </p>
               </div>
-              <div className="ml-8 mt-1 ">
+              <div className="ml-8 mt-2 ">
                 {/* price */}
-                <p className="">69544 $</p>
-                <p className="text-sm text-gray-400">-5.81936 %</p>
+                <p className="">$69544</p>
+                <p className="text-xs text-gray-400">-5.81936 %</p>
               </div>
             </div>
           </article>
