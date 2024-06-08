@@ -20,6 +20,8 @@ export default function Trending() {
       });
   });
 
+  // i need to do splice with the trending data, ex only show coins from 4 to 10, than passe through data in componenet
+
   // do a map with the article, find a way to only show the 6 first in the trending list
 
   return (
