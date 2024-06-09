@@ -29,7 +29,7 @@ export default function Trending() {
 
   return (
     <>
-      <section className="pt-6 pb-6 pl-3 ">
+      <section className="pt-4 pb-6 pl-3 ">
         <h1 className="text-base mb-4 text-gray-300 ">Trending Coins</h1>
         <div className="flex flex-wrap justify-between w-full">
           <article className="w-80 h-24 mb-2 flex rounded-md border border-gray-900 bg-gray-950 hover:bg-gray-900/50 transition-colors">
