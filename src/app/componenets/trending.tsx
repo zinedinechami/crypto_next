@@ -32,7 +32,7 @@ export default function Trending() {
       <section className="pt-4 pb-6 pl-3 ">
         <h1 className="text-base mb-4 text-gray-300 ">Trending Coins</h1>
         <div className="flex flex-wrap justify-between w-full">
-          <article className="w-80 h-24 mb-2 flex rounded-md border border-gray-900 bg-gray-950 hover:bg-gray-900/50 transition-colors">
+          <article className="w-72 h-24 mb-4 flex rounded-md border border-gray-900 bg-gray-950 hover:bg-gray-900/50 transition-colors">
             <div className="m-4 flex">
               <div className="w-16 h-16 rounded-full bg-white "></div>
               <div className="ml-6">
@@ -41,18 +41,18 @@ export default function Trending() {
                   BTC
                 </p>
               </div>
-              <div className="ml-8 mt-2 ">
+              <div className="mt-2 ml-4">
                 {/* price */}
                 <p className="">$69544</p>
                 <p className="text-xs text-gray-400">-5.81936 %</p>
               </div>
             </div>
           </article>
-          <article className="w-80 h-24 rounded-md border border-gray-900 bg-gray-950"></article>
-          <article className="w-80 h-24 mr-10 rounded-md border border-gray-900 bg-gray-950"></article>
-          <article className="w-80 h-24 mb-4  rounded-md border border-gray-900 bg-gray-950"></article>
-          <article className="w-80 h-24 rounded-md border border-gray-900 bg-gray-950"></article>
-          <article className="w-80 h-24 mr-10 rounded-md border border-gray-900 bg-gray-950"></article>
+          <article className="w-72 h-24 rounded-md border border-gray-900 bg-gray-950"></article>
+          <article className="w-72 h-24 mr-10 rounded-md border border-gray-900 bg-gray-950"></article>
+          <article className="w-72 h-24 mb-4  rounded-md border border-gray-900 bg-gray-950"></article>
+          <article className="w-72 h-24 rounded-md border border-gray-900 bg-gray-950"></article>
+          <article className="w-72 h-24 mr-10 rounded-md border border-gray-900 bg-gray-950"></article>
         </div>
       </section>
     </>
