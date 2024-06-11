@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Trending() {
   const [TrendingData, setTrendingData] = useState();
@@ -43,13 +44,24 @@ export default function Trending() {
               return (
                 <>
                   <a key={data?.item.coin_id} href="">
-                    <article className="w-72 h-24 mb-4 flex rounded-md border border-gray-900 bg-gray-950 hover:bg-gray-900/50 transition-colors">
+                    <article className="w-72 h-32 pt-3 mb-4 flex rounded-md border border-gray-900 bg-gray-950 hover:bg-gray-900/50 transition-colors">
                       <div className="m-4 flex">
-                        <div className="w-16 h-16 rounded-full bg-white "></div>
+                        <div className="w-16 h-16 rounded-full bg-white ">
+                          <Image
+                            src={data?.item.thumb}
+                            width={100}
+                            height={50}
+                            quality={100}
+                            alt={data?.item.name}
+                            className="rounded-full border "
+                          />
+                        </div>
                         <div className="ml-6">
-                          <p className="font-bold">{data?.item.name}</p>
+                          <p className="font-bold w-16 overflow-hidden ">
+                            {data?.item.name}
+                          </p>
                           <p className="text-sm p-1 bg-gray-800 text-center rounded-lg my-1">
-                            BTC
+                            {data?.item.symbol}
                           </p>
                         </div>
                         <div className="mt-2 ml-4">
