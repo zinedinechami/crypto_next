@@ -27,7 +27,11 @@ export default function Trending() {
     getTrendingData();
   }, []);
 
-  // ? create a splice variable?
+  const TrendingCoins = TrendingData?.coins.splice(1, 6);
+
+  console.log(TrendingCoins);
+
+  // add texte overflow hidden
 
   return (
     <>
@@ -35,22 +39,30 @@ export default function Trending() {
         <section className="pt-4 pb-6 pl-3 ">
           <h1 className="text-base mb-4 text-gray-300 ">Trending Coins</h1>
           <div className="flex flex-wrap justify-between w-full">
-            <article className="w-72 h-24 mb-4 flex rounded-md border border-gray-900 bg-gray-950 hover:bg-gray-900/50 transition-colors">
-              <div className="m-4 flex">
-                <div className="w-16 h-16 rounded-full bg-white "></div>
-                <div className="ml-6">
-                  <p className="font-bold">Bitcoin</p>
-                  <p className="text-sm p-1 bg-gray-800 text-center rounded-lg my-1">
-                    BTC
-                  </p>
-                </div>
-                <div className="mt-2 ml-4">
-                  {/* price */}
-                  <p className="">$69544</p>
-                  <p className="text-xs text-gray-400">-5.81936 %</p>
-                </div>
-              </div>
-            </article>
+            {TrendingCoins.map((data) => {
+              return (
+                <>
+                  <a key={data?.item.coin_id} href="">
+                    <article className="w-72 h-24 mb-4 flex rounded-md border border-gray-900 bg-gray-950 hover:bg-gray-900/50 transition-colors">
+                      <div className="m-4 flex">
+                        <div className="w-16 h-16 rounded-full bg-white "></div>
+                        <div className="ml-6">
+                          <p className="font-bold">{data?.item.name}</p>
+                          <p className="text-sm p-1 bg-gray-800 text-center rounded-lg my-1">
+                            BTC
+                          </p>
+                        </div>
+                        <div className="mt-2 ml-4">
+                          {/* price */}
+                          <p className="">$69544</p>
+                          <p className="text-xs text-gray-400">-5.81936 %</p>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </>
+              );
+            })}
           </div>
         </section>
       )}
