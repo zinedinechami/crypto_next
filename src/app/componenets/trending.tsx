@@ -37,14 +37,14 @@ export default function Trending() {
   return (
     <>
       {TrendingData && (
-        <section className="pt-4 pb-6 pl-3 ">
+        <section className="pt-4 pb-6 ">
           <h1 className="text-base mb-4 text-gray-300 ">Trending Coins</h1>
           <div className="flex flex-wrap justify-between w-full">
             {TrendingCoins.map((data) => {
               return (
                 <>
-                  <a key={data?.item.coin_id} href="">
-                    <article className="w-72 h-32 pt-3 mb-4 flex rounded-md border border-gray-900 bg-gray-950 hover:bg-gray-900/50 transition-colors">
+                  <a key={data?.item.id} href="">
+                    <article className="w-80 h-30  mb-4 flex rounded-md border border-gray-900 bg-gray-950 hover:bg-gray-900/50 transition-colors">
                       <div className="m-4 flex">
                         <div className="w-16 h-16 rounded-full bg-white ">
                           <Image
@@ -57,17 +57,21 @@ export default function Trending() {
                           />
                         </div>
                         <div className="ml-6">
-                          <p className="font-bold w-16 overflow-hidden ">
+                          <p className="font-bold w-16 h-6 overflow-hidden ">
                             {data?.item.name}
                           </p>
                           <p className="text-sm p-1 bg-gray-800 text-center rounded-lg my-1">
                             {data?.item.symbol}
                           </p>
                         </div>
-                        <div className="mt-2 ml-4">
+                        <div className="mt-2 ml-7">
                           {/* price */}
-                          <p className="">$69544</p>
-                          <p className="text-xs text-gray-400">-5.81936 %</p>
+                          <p className=" w-24 overflow-hidden h-8">
+                            ${data?.item.data.price}
+                          </p>
+                          <p className="text-xs text-gray-400 w-20 overflow-hidden h-8">
+                            {data?.item.data.price_change_percentage_24h.usd}
+                          </p>
                         </div>
                       </div>
                     </article>
