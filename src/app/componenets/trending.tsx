@@ -9,6 +9,7 @@ export default function Trending() {
   const api_url = "https://api.coingecko.com/api/v3/search/trending";
 
   const getTrendingData = async () => {
+    //explain try and catch, await and async
     try {
       const response = await fetch(api_url, {
         method: "GET",
@@ -37,8 +38,10 @@ export default function Trending() {
   return (
     <>
       {TrendingData && (
-        <section className="pt-4 pb-6 ">
-          <h1 className="text-base mb-4 text-gray-300 ">Trending Coins</h1>
+        <section className="pt-6 pb-6 ">
+          <h1 className="text-2xl mb-6 font-medium text-gray-100 ">
+            Trending Coins
+          </h1>
           <div className="flex flex-wrap justify-between w-full">
             {TrendingCoins.map((data) => {
               return (

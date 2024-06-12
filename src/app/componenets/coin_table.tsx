@@ -2,7 +2,7 @@ export default function CoinsTable() {
   return (
     <>
       <section className="pb-20">
-        <h1 className="text-base mb-4 text-gray-300 ">
+        <h1 className="text-2xl mb-6 text-gray-100 font-medium">
           Cryptocurrency Prices by Market Cap
         </h1>
         <div className="rounded-lg overflow-hidden border border-gray-900">
