@@ -1,4 +1,32 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 export default function CoinsTable() {
+  const [TableData, setTableData] = useState();
+
+  const api_url = "'https://api.coingecko.com/api/v3/coins/list'";
+
+  const getTableData = async () => {
+    try {
+      const response = await fetch(api_url, {
+        method: "GET",
+        headers: { accept: "application/json" },
+      });
+      if (response) {
+        const data = await response.json();
+        if (data) setTableData(data);
+        console.log(data);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getTableData();
+  }, []);
+
   return (
     <>
       <section className="pb-20">
@@ -7,7 +35,7 @@ export default function CoinsTable() {
         </h1>
         <div className="rounded-lg overflow-hidden border border-gray-900">
           <table className="w-full  bg-gray-950  border-gray-900 rounded-lg">
-            <thead className="text-gray-400 border-b border-gray-800 rounded-lg text-sm bg-gray-900">
+            <thead className="text-gray-200 font-bold border-b border-gray-800 rounded-lg text-sm ">
               <tr className="">
                 <th>#</th>
                 <th className="py-3">NAME</th>
