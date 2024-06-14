@@ -29,7 +29,9 @@ export default function Trending() {
     getTrendingData();
   }, []);
 
-  const TrendingCoins = TrendingData?.coins.splice(1, 6);
+  const TrendingCoins = TrendingData?.coins.splice(1, 4);
+
+  //create a variable that reduces length of numbers in trending
 
   console.log(TrendingCoins);
 
@@ -38,7 +40,7 @@ export default function Trending() {
   return (
     <>
       {TrendingData && (
-        <section className="pt-6 pb-6 ">
+        <section className="pt-10 pb-10  mx-auto">
           <h1 className="text-2xl mb-6 font-medium text-gray-100 ">
             Trending Coins
           </h1>
@@ -47,27 +49,27 @@ export default function Trending() {
               return (
                 <>
                   <a key={data?.item.id} href="">
-                    <article className="w-80 h-30  mb-4 flex rounded-md border border-gray-900 bg-gray-950 hover:bg-gray-900/50 transition-colors">
+                    <article className="w-80   mb-4 flex rounded-lg border border-gray-900 bg-gray-950 hover:bg-gray-900/50 transition-colors">
                       <div className="m-4 flex">
-                        <div className="w-16 h-16 rounded-full bg-white ">
+                        <div className="w-16 h-16 mt-1 rounded-full bg-white ">
                           <Image
-                            src={data?.item.thumb}
+                            src={data?.item.large}
                             width={100}
                             height={50}
                             quality={100}
                             alt={data?.item.name}
-                            className="rounded-full border "
+                            className="rounded-full border border-gray-400 "
                           />
                         </div>
-                        <div className="ml-6">
-                          <p className="font-bold w-16 h-6 overflow-hidden ">
+                        <div className="ml-4 mt-1">
+                          <p className="font-bold w-20 h-6 overflow-hidden text-center ">
                             {data?.item.name}
                           </p>
-                          <p className="text-sm p-1 bg-gray-800 text-center rounded-lg my-1">
+                          <p className="text-sm py-1 bg-gray-900 border border-gray-800 text-center rounded-lg my-1">
                             {data?.item.symbol}
                           </p>
                         </div>
-                        <div className="mt-2 ml-7">
+                        <div className="mt-2 ml-4">
                           {/* price */}
                           <p className=" w-24 overflow-hidden h-8">
                             ${data?.item.data.price}

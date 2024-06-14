@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <>
       <nav className="w-full flex h-16  border-gray-900 border-b sticky top-0 z-50  backdrop-blur-lg">
-        <div className="mt-4 ml-12 flex">
+        <div className="mt-4 ml-10 flex">
           <h1 className=" font-bold text-xl text-gray-50">CoinWatch</h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -20,16 +20,12 @@ export default function Header() {
             />
           </svg>
         </div>
-        <div className="absolute right-10 top-4">
+        <div className="absolute right-5 top-4">
           <input
-            className="h-8 w-64 rounded mr-2 pl-2 text-sm bg-gray-900 border border-gray-800"
+            className="h-8 w-72 rounded mr-2 pl-2 text-sm bg-gray-900 border border-gray-800"
             type="text"
-            placeholder="Search (Ctrl+K)"
+            placeholder="Search Coins..."
           />
-
-          <button className="px-2 h-8 bg-blue-600 hover:bg-blue-500 transition-colors  text-sm font-bold text-gray-50 rounded">
-            Sign in
-          </button>
         </div>
       </nav>
     </>
