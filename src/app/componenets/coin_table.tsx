@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 export default function CoinsTable() {
   const [TableData, setTableData] = useState();
 
-  const api_url = "'https://api.coingecko.com/api/v3/coins/list'";
+  const api_url = "https://api.coingecko.com/api/v3/coins/list";
 
   const getTableData = async () => {
     try {
@@ -26,6 +26,8 @@ export default function CoinsTable() {
   useEffect(() => {
     getTableData();
   }, []);
+
+  // todo: create pagination variable and fonction, and componenet
 
   return (
     <>
