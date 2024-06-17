@@ -42,7 +42,7 @@ export default function Trending() {
       {TrendingData && (
         <section className="pt-10 pb-10  mx-auto">
           <h1 className="text-2xl mb-6 font-medium text-gray-100 ">
-            Trending Coins
+            Top Trending Coins
           </h1>
           <div className="flex flex-wrap justify-between w-full">
             {TrendingCoins.map((data) => {

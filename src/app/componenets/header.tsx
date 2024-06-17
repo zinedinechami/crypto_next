@@ -20,7 +20,7 @@ export default function Header() {
             />
           </svg>
         </div>
-        <div className="absolute right-5 top-4">
+        <div className="absolute right-3 top-4">
           <input
             className="h-8 w-72 rounded mr-2 pl-2 text-sm bg-gray-900 border border-gray-800"
             type="text"
