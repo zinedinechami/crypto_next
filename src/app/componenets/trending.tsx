@@ -40,7 +40,7 @@ export default function Trending() {
   return (
     <>
       {TrendingData && (
-        <section className="pt-10 pb-10  mx-auto">
+        <section className="pt-6 pb-6  mx-auto">
           <h1 className="text-2xl mb-6 font-medium text-gray-100 ">
             Top Trending Coins
           </h1>

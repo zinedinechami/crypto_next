@@ -5,7 +5,7 @@ import CoinsTable from "./componenets/coin_table";
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-br from-gray-950 to-gray-900 text-zinc-100 z-0">
+    <main className="bg-gradient-to-bl from-gray-950 to-gray-900 text-zinc-100 z-0">
       <Header />
       <div className="w-11/12  mx-auto">
         <Trending />

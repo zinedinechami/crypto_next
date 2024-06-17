@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function CoinsTable() {
   const [TableData, setTableData] = useState();
@@ -45,7 +46,7 @@ export default function CoinsTable() {
               <thead className="text-gray-200 font-bold border-b border-gray-800 rounded-lg text-sm ">
                 <tr className="">
                   <th>#</th>
-                  <th className="py-3">NAME</th>
+                  <th className="py-3 text-left">NAME</th>
                   <th>PRICE</th>
                   <th>1h %</th>
                   <th>24h %</th>
@@ -53,13 +54,26 @@ export default function CoinsTable() {
                   <th>MARKET CAP</th>
                 </tr>
               </thead>
-              <tbody className="rounded-md text-center text-sm font-bold">
+              <tbody className="rounded-md text-center text-sm ">
                 {TableData.map((data, index) => {
                   return (
                     <>
                       <tr className="hover:bg-gray-900/50 transition-colors border-b border-gray-900">
                         <td>{index + 1}</td>
-                        <td className="py-6">{data?.name}</td>
+                        <td className="py-5 flex text-center">
+                          <Image
+                            src={data?.image}
+                            width={35}
+                            height={35}
+                            alt={data?.id}
+                          />{" "}
+                          <div className="mt-2 ml-3 font-bold">
+                            {data?.name}
+                          </div>
+                          <p className="text-sm py-1 bg-gray-900 border border-gray-800 text-center rounded-lg my-1 px-6 ml-4 uppercase">
+                            {data?.symbol}
+                          </p>
+                        </td>
                         <td>Price</td>
                         <td>1h %</td>
                         <td>24h %</td>
