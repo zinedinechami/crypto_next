@@ -3,7 +3,7 @@ export default function Header() {
 
   return (
     <>
-      <nav className="w-full flex h-16  border-gray-900 border-b sticky top-0 z-50  backdrop-blur-lg">
+      <nav className="w-full flex h-16 bg-gray-950 border-gray-900 border-b sticky top-0 z-50  backdrop-blur-lg">
         <div className="mt-4 ml-6 flex">
           <h1 className=" font-bold text-xl text-gray-50">CoinWatch</h1>
           <svg
@@ -22,7 +22,7 @@ export default function Header() {
         </div>
         <div className="absolute right-4 top-4">
           <input
-            className="h-8 w-72 rounded mr-2 pl-2 text-sm bg-gray-900 border border-gray-800"
+            className="h-8 w-72 rounded mr-2 pl-2 text-sm bg-gray-900/50 border border-gray-800"
             type="text"
             placeholder="Search Coins..."
           />

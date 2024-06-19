@@ -43,15 +43,15 @@ export default function CoinsTable() {
         {TableData && (
           <div className="rounded-lg overflow-hidden border border-gray-900">
             <table className="w-full  bg-gray-950  border-gray-900 rounded-lg">
-              <thead className="text-gray-200 font-bold border-b border-gray-800 rounded-lg text-sm ">
+              <thead className="text-gray-200 font-bold border-b border-gray-800 rounded-lg text-sm bg-gray-900/50 ">
                 <tr className="">
                   <th>#</th>
-                  <th className="py-3 text-left">NAME</th>
-                  <th>PRICE</th>
+                  <th className="py-3 text-left">Name</th>
+                  <th>Price</th>
                   <th>1h %</th>
                   <th>24h %</th>
                   <th>7d %</th>
-                  <th>MARKET CAP</th>
+                  <th>Market Cap</th>
                 </tr>
               </thead>
               <tbody className="rounded-md text-center text-sm ">
