@@ -37,6 +37,8 @@ export default function Trending() {
 
   // add texte overflow hidden
 
+  type MyDataType = { item: string; id: string };
+
   return (
     <>
       {TrendingData && (
@@ -45,7 +47,7 @@ export default function Trending() {
             Top Trending Coins
           </h1>
           <div className="flex flex-wrap justify-between w-full">
-            {TrendingCoins.map((data) => {
+            {TrendingCoins.map((data: MyDataType) => {
               return (
                 <>
                   <a key={data?.item.id} href="">
