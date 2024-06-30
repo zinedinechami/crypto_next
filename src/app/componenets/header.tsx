@@ -1,5 +1,6 @@
 export default function Header() {
-  // add heart svg to watchlist
+  // todo: api fetch for modal
+  // create state for opening and losing of modal
 
   return (
     <>

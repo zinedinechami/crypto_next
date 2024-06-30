@@ -32,7 +32,7 @@ export default function CoinsTable() {
     getTableData();
   }, []);
 
-  // todo: create pagination variable and fonction, and componenet
+  // todo: create pagination prev and next
 
   return (
     <>
@@ -46,7 +46,7 @@ export default function CoinsTable() {
               <thead className="text-gray-200 font-bold border-b border-gray-800 rounded-lg text-sm bg-gray-900/50 ">
                 <tr className="">
                   <th>#</th>
-                  <th className="py-3 text-left">Name</th>
+                  <th className="py-3 ">Name</th>
                   <th>Price</th>
                   <th>1h %</th>
                   <th>24h %</th>
@@ -60,20 +60,23 @@ export default function CoinsTable() {
                     <>
                       <tr className="hover:bg-gray-900/50 transition-colors border-b border-gray-900">
                         <td>{index + 1}</td>
-                        <td className="py-5 flex text-center">
-                          <Image
-                            src={data?.image}
-                            width={35}
-                            height={35}
-                            alt={data?.id}
-                          />{" "}
-                          <div className="mt-2 ml-3 font-bold">
-                            {data?.name}
-                          </div>
-                          <p className="text-sm py-1 bg-gray-900 border border-gray-800 text-center rounded-lg my-1 px-6 ml-4 uppercase">
-                            {data?.symbol}
-                          </p>
-                        </td>
+                        <a href={"/coins/" + data?.id}>
+                          <td className="py-5 flex text-center">
+                            <Image
+                              src={data?.image}
+                              width={35}
+                              height={35}
+                              alt={data?.id}
+                            />{" "}
+                            <div className="mt-2 ml-3 font-bold">
+                              {data?.name}
+                            </div>
+                            <p className="text-sm py-1 bg-gray-900 border border-gray-800 text-center rounded-lg my-1 px-6 ml-4 uppercase">
+                              {data?.symbol}
+                            </p>
+                          </td>
+                        </a>
+
                         <td>Price</td>
                         <td>1h %</td>
                         <td>24h %</td>
