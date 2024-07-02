@@ -4,14 +4,14 @@ export default function Header() {
 
   return (
     <>
-      <nav className="w-full flex h-16 bg-gray-950 border-gray-900 border-b sticky top-0 z-50  backdrop-blur-lg">
+      <nav className="w-full flex h-16  border-zinc-800 border-b sticky top-0 z-50  backdrop-blur-lg">
         <div className="mt-4 ml-6 flex">
-          <h1 className=" font-bold text-xl text-gray-50">CoinWatch</h1>
+          <h1 className="  text-xl text-gray-50">CoinWatch</h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-6 h-7 ml-1 text-blue-500"
+            className="w-6 h-7 ml-1 text-zinc-50"
           >
             <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
             <path
@@ -23,7 +23,7 @@ export default function Header() {
         </div>
         <div className="absolute right-4 top-4">
           <input
-            className="h-8 w-72 rounded mr-2 pl-2 text-sm bg-gray-900/50 border border-gray-800"
+            className="h-8 w-72 rounded mr-2 pl-2 text-sm bg-zinc-900 "
             type="text"
             placeholder="Search Coins..."
           />

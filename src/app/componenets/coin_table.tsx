@@ -37,16 +37,16 @@ export default function CoinsTable() {
   return (
     <>
       <section className="pb-20   mx-auto">
-        <h1 className="text-2xl mb-6 text-gray-100 font-medium">
+        <h1 className="text-xl mb-6 text-gray-100 font-semibold">
           Cryptocurrency Prices by Market Cap
         </h1>
         {TableData && (
-          <div className="rounded-lg overflow-hidden border border-gray-900">
-            <table className="w-full  bg-gray-950  border-gray-900 rounded-lg">
-              <thead className="text-gray-200 font-bold border-b border-gray-800 rounded-lg text-sm bg-gray-900/50 ">
+          <div className="rounded-lg overflow-hidden border border-zinc-800">
+            <table className="w-full  bg-zinc-950  border-zinc-800 rounded-lg">
+              <thead className="text-gray-200 font-bold border-b border-zinc-800 rounded-lg text-sm  ">
                 <tr className="">
                   <th>#</th>
-                  <th className="py-3 ">Name</th>
+                  <th className="py-3 text-left">Name</th>
                   <th>Price</th>
                   <th>1h %</th>
                   <th>24h %</th>
@@ -58,7 +58,7 @@ export default function CoinsTable() {
                 {TableData.map((data, index) => {
                   return (
                     <>
-                      <tr className="hover:bg-gray-900/50 transition-colors border-b border-gray-900">
+                      <tr className="hover:bg-zinc-900 transition-colors border-b border-zinc-800">
                         <td>{index + 1}</td>
                         <a href={"/coins/" + data?.id}>
                           <td className="py-5 flex text-center">
@@ -68,10 +68,8 @@ export default function CoinsTable() {
                               height={35}
                               alt={data?.id}
                             />{" "}
-                            <div className="mt-2 ml-3 font-bold">
-                              {data?.name}
-                            </div>
-                            <p className="text-sm py-1 bg-gray-900 border border-gray-800 text-center rounded-lg my-1 px-6 ml-4 uppercase">
+                            <div className="mt-2 ml-3 ">{data?.name}</div>
+                            <p className="text-sm py-1 bg-zinc-50 text-zinc-950 font-bold text-center rounded-lg my-1 px-6 ml-4 uppercase">
                               {data?.symbol}
                             </p>
                           </td>

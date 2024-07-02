@@ -41,7 +41,7 @@ export default function Trending() {
     <>
       {TrendingData && (
         <section className="pt-6 pb-6  mx-auto">
-          <h1 className="text-2xl mb-6 font-medium text-gray-100 ">
+          <h1 className="text-xl mb-6 font-semibold text-gray-100 ">
             Top Trending Coins
           </h1>
           <div className="flex flex-wrap justify-between w-full">
@@ -49,7 +49,7 @@ export default function Trending() {
               return (
                 <>
                   <a key={data?.item.id} href="">
-                    <article className="w-80   mb-4 flex rounded-lg border border-gray-900 bg-gray-950 hover:bg-gray-900/50 transition-colors">
+                    <article className="w-80   mb-4 flex rounded-lg border border-zinc-800 bg-zinc-950 hover:bg-zinc-900 transition-colors">
                       <div className="m-4 flex">
                         <div className="w-16 h-16 mt-1 rounded-full bg-white ">
                           <Image
@@ -62,10 +62,10 @@ export default function Trending() {
                           />
                         </div>
                         <div className="ml-4 mt-1">
-                          <p className="font-bold w-20 h-6 overflow-hidden text-center ">
+                          <p className=" w-20 h-6 overflow-hidden text-center ">
                             {data?.item.name}
                           </p>
-                          <p className="text-sm py-1 bg-gray-900 border border-gray-800 text-center rounded-lg my-1">
+                          <p className="text-sm py-1 bg-zinc-50 text-zinc-950 font-bold text-center rounded-lg my-1">
                             {data?.item.symbol}
                           </p>
                         </div>
