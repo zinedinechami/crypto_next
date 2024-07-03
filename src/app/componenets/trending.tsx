@@ -48,7 +48,7 @@ export default function Trending() {
             {TrendingCoins.map((data) => {
               return (
                 <>
-                  <a key={data?.item.id} href="">
+                  <a key={data?.item.id} href={"/coins/" + data?.item.id}>
                     <article className="w-80   mb-4 flex rounded-lg border border-zinc-800 bg-zinc-950 hover:bg-zinc-900 transition-colors">
                       <div className="m-4 flex">
                         <div className="w-16 h-16 mt-1 rounded-full bg-white ">
@@ -58,7 +58,7 @@ export default function Trending() {
                             height={50}
                             quality={100}
                             alt={data?.item.name}
-                            className="rounded-full border border-gray-400 "
+                            className="rounded-full border border-zinc-400 "
                           />
                         </div>
                         <div className="ml-4 mt-1">
