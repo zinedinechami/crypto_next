@@ -43,14 +43,14 @@ export default function CoinsTable() {
         {TableData && (
           <div className="rounded-lg overflow-hidden border border-zinc-800">
             <table className="w-full  bg-zinc-950  border-zinc-800 rounded-lg">
-              <thead className="text-gray-200 font-bold border-b border-zinc-800 rounded-lg text-sm  ">
+              <thead className="text-gray-400   border-b border-zinc-800 rounded-lg text-sm  ">
                 <tr className="">
                   <th>#</th>
                   <th className="py-3 text-left">Name</th>
                   <th>Price</th>
-                  <th>1h %</th>
-                  <th>24h %</th>
-                  <th>7d %</th>
+
+                  <th>Change % 24h</th>
+
                   <th>Market Cap</th>
                 </tr>
               </thead>
@@ -75,11 +75,11 @@ export default function CoinsTable() {
                           </td>
                         </a>
 
-                        <td>Price</td>
-                        <td>1h %</td>
-                        <td>24h %</td>
-                        <td>7d %</td>
-                        <td>Market Cap</td>
+                        <td>${data?.current_price}</td>
+
+                        <td>{data?.market_cap_change_percentage_24h}</td>
+
+                        <td>${data?.market_cap}</td>
                       </tr>
                     </>
                   );
