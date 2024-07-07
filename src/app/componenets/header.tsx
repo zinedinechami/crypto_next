@@ -4,7 +4,7 @@ export default function Header() {
 
   return (
     <>
-      <nav className="w-full flex h-16  border-zinc-800 border-b sticky top-0 z-50  backdrop-blur-lg">
+      <nav className="w-full flex h-16  border-zinc-800  bg-zinc-950 border-b sticky top-0 z-50  backdrop-blur-lg">
         <div className="mt-4 ml-6 flex">
           <h1 className="  text-xl text-gray-50">CoinWatch</h1>
           <svg

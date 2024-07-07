@@ -38,7 +38,7 @@ export default function CoinsTable() {
     <>
       <section className="pb-20   mx-auto">
         <h1 className="text-xl mb-6 text-gray-100 font-semibold">
-          Cryptocurrency Prices by Market Cap
+          Cryptocurrencies by Market Cap
         </h1>
         {TableData && (
           <div className="rounded-lg overflow-hidden border border-zinc-800">
