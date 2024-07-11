@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
+// todo: create pagination prev and next
+
 export default function CoinsTable() {
   const [TableData, setTableData] = useState();
 
@@ -32,8 +34,6 @@ export default function CoinsTable() {
     getTableData();
   }, []);
 
-  // todo: create pagination prev and next
-
   return (
     <>
       <section className="pb-20   mx-auto">
@@ -43,15 +43,15 @@ export default function CoinsTable() {
         {TableData && (
           <div className="rounded-lg overflow-hidden border border-zinc-800">
             <table className="w-full  bg-zinc-950  border-zinc-800 rounded-lg">
-              <thead className="text-gray-400   border-b border-zinc-800 rounded-lg text-sm  ">
+              <thead className="text-zinc-400   border-b border-zinc-800 rounded-lg text-sm  ">
                 <tr className="">
                   <th>#</th>
-                  <th className="py-3 text-left">Name</th>
-                  <th>Price</th>
+                  <th className="py-3 text-left">NAME</th>
+                  <th>PRICE</th>
 
-                  <th>Change % 24h</th>
+                  <th>CHANGE % 24h</th>
 
-                  <th>Market Cap</th>
+                  <th>MARKET CAP</th>
                 </tr>
               </thead>
               <tbody className="rounded-md text-center text-sm ">
@@ -69,7 +69,7 @@ export default function CoinsTable() {
                               alt={data?.id}
                             />{" "}
                             <div className="mt-2 ml-3 ">{data?.name}</div>
-                            <p className="text-sm py-1 bg-zinc-50 text-zinc-950 font-bold text-center rounded-lg my-1 px-6 ml-4 uppercase">
+                            <p className="text-sm   text-zinc-50 font-bold text-center rounded-lg  ml-4 mt-2 uppercase">
                               {data?.symbol}
                             </p>
                           </td>

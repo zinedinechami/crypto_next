@@ -1,6 +1,6 @@
 export default function Header() {
   // todo: api fetch for modal
-  // create state for opening and losing of modal
+  // todo: reate state for opening and losing of modal
 
   return (
     <>

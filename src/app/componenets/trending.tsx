@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
+// todo: add types interface to state
+
 export default function Trending() {
   const [TrendingData, setTrendingData] = useState();
 
@@ -61,11 +63,11 @@ export default function Trending() {
                             className="rounded-full border border-zinc-400 "
                           />
                         </div>
-                        <div className="ml-4 mt-1">
+                        <div className="ml-4 mt-2">
                           <p className=" w-20 h-6 overflow-hidden text-center ">
                             {data?.item.name}
                           </p>
-                          <p className="text-sm py-1 bg-zinc-50 text-zinc-950 font-bold text-center rounded-lg my-1">
+                          <p className="text-sm   text-zinc-50 font-bold text-center rounded-lg my-1">
                             {data?.item.symbol}
                           </p>
                         </div>

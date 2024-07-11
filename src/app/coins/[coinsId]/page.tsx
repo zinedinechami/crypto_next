@@ -1,5 +1,8 @@
 import Header from "@/app/componenets/header";
 
+//todo: fetch data by id from api
+//todo: create graph
+
 export default function Page() {
   return (
     <>
