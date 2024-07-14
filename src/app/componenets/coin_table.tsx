@@ -69,7 +69,7 @@ export default function CoinsTable() {
                               alt={data?.id}
                             />{" "}
                             <div className="mt-2 ml-3 ">{data?.name}</div>
-                            <p className="text-sm   text-zinc-50 font-bold text-center rounded-lg  ml-4 mt-2 uppercase">
+                            <p className="text-sm   text-zinc-400 font-bold text-center rounded-lg  ml-2 mt-2 uppercase">
                               {data?.symbol}
                             </p>
                           </td>

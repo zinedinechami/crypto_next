@@ -67,7 +67,7 @@ export default function Trending() {
                           <p className=" w-20 h-6 overflow-hidden text-center ">
                             {data?.item.name}
                           </p>
-                          <p className="text-sm   text-zinc-50 font-bold text-center rounded-lg my-1">
+                          <p className="text-sm   text-zinc-400 font-bold text-center rounded-lg my-1">
                             {data?.item.symbol}
                           </p>
                         </div>

@@ -1,9 +1,43 @@
+"use client";
+
 import Header from "@/app/componenets/header";
+import { useEffect, useState } from "react";
 
 //todo: fetch data by id from api
 //todo: create graph
 
-export default function Page() {
+export default function Page({ params }: { params: { coinsId: string } }) {
+  const [coinsData, setCoinsData] = useState();
+
+  const id = params.coinsId;
+
+  const api_url = `https://api.coingecko.com/api/v3/coins/${id}?localization=false&tickers=false&market_data=true&developer_data=false`;
+
+  console.log(id);
+
+  console.log(api_url);
+
+  const getCoinsData = async () => {
+    try {
+      const response = await fetch(api_url, {
+        method: "GET",
+        headers: { accept: "application/json" },
+      });
+      if (response) {
+        const data = await response.json();
+        if (data) setCoinsData(data);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  console.log(coinsData);
+
+  useEffect(() => {
+    getCoinsData();
+  });
+
   return (
     <>
       <body className="bg-zinc-950  text-zinc-100 z-0">
