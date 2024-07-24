@@ -5,6 +5,8 @@ import Image from "next/image";
 
 // todo: create pagination prev and next
 
+//todo: create type interface for state data
+
 export default function CoinsTable() {
   const [TableData, setTableData] = useState();
 
