@@ -44,7 +44,7 @@ export default function Page({ params }: { params: { coinsId: string } }) {
           <Header />
 
           <section className="flex w-11/12  mx-auto mt-10 ">
-            <div className="w-1/3 p-6 border-zinc-800 border h-96 rounded-lg bg-zinc-950">
+            <div className="w-1/3 p-6 border-zinc-800 border  rounded-lg bg-zinc-950">
               <h1>
                 # {coinsData?.market_cap_rank} {coinsData?.name}
               </h1>
