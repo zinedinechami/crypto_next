@@ -39,13 +39,13 @@ export default function CoinsTable() {
   return (
     <>
       <section className="pb-20   mx-auto">
-        <h1 className="text-xl mb-6 text-gray-100 font-semibold">
-          Cryptocurrencies by Market Cap
+        <h1 className="text-lg mb-6 text-zinc-300 font-medium">
+          CRYPTOCURRENCIES BY MARKET CAP
         </h1>
         {TableData && (
-          <div className="rounded-lg overflow-hidden border border-zinc-800">
-            <table className="w-full  bg-zinc-950  border-zinc-800 rounded-lg">
-              <thead className="text-zinc-400   border-b border-zinc-800 rounded-lg text-sm  ">
+          <div className="rounded-lg overflow-hidden ">
+            <table className="w-full  bg-zinc-900/60   rounded-xl">
+              <thead className="text-zinc-500   border-b border-zinc-900 rounded-lg text-sm  ">
                 <tr className="">
                   <th>#</th>
                   <th className="py-3 text-left">NAME</th>
@@ -56,11 +56,11 @@ export default function CoinsTable() {
                   <th>MARKET CAP</th>
                 </tr>
               </thead>
-              <tbody className="rounded-md text-center text-sm ">
+              <tbody className="rounded-xl text-center text-sm ">
                 {TableData.map((data, index) => {
                   return (
                     <>
-                      <tr className="hover:bg-zinc-900 transition-colors border-b border-zinc-800">
+                      <tr className="hover:bg-zinc-900 transition-colors border-b border-zinc-900">
                         <td>{index + 1}</td>
                         <a href={"/coins/" + data?.id}>
                           <td className="py-5 flex text-center">
@@ -71,7 +71,7 @@ export default function CoinsTable() {
                               alt={data?.id}
                             />{" "}
                             <div className="mt-2 ml-3 ">{data?.name}</div>
-                            <p className="text-sm   text-zinc-400 font-bold text-center rounded-lg  ml-2 mt-2 uppercase">
+                            <p className="text-sm   text-zinc-500 font-black text-center rounded-lg  ml-2 mt-2 uppercase">
                               {data?.symbol}
                             </p>
                           </td>

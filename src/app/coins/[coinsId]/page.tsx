@@ -36,6 +36,15 @@ export default function Page({ params }: { params: { coinsId: string } }) {
     getCoinsData();
   });
 
+  //todo: create graph by doing api call
+
+  //todo: add link to buy crypto from atrusted website, create buy button component
+
+  const history_api =
+    "https://api.coingecko.com/api/v3/coins/id/market_chart?vs_currency=usd&days=365";
+
+  const [historyData, setHistoryData] = useState();
+
   //add market cap, volume 24h, total suplly, max supply
   return (
     <>
