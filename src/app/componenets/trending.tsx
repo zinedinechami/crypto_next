@@ -44,7 +44,7 @@ export default function Trending() {
       {TrendingData && (
         <section className="pt-8 pb-6  mx-auto">
           <h1 className="text-lg mb-6 font-semibold text-zinc-300 ">
-            TRENDING COINS
+            TRENDING CRYPTOCURRENCIES
           </h1>
           <div className="flex flex-wrap justify-between w-full">
             {TrendingCoins.map((data) => {
