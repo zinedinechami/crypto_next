@@ -43,7 +43,7 @@ export default function Trending() {
     <>
       {TrendingData && (
         <section className="pt-8 pb-6  mx-auto">
-          <h1 className="text-lg mb-6 font-semibold text-zinc-300 ">
+          <h1 className="text-lg mb-6  text-zinc-300 ">
             TRENDING CRYPTOCURRENCIES
           </h1>
           <div className="flex flex-wrap justify-between w-full">
@@ -51,7 +51,7 @@ export default function Trending() {
               return (
                 <>
                   <a key={data?.item.id} href={"/coins/" + data?.item.id}>
-                    <article className="w-80   mb-4 flex rounded-xl  bg-zinc-900/60 hover:bg-zinc-900 transition-colors">
+                    <article className="w-80   mb-4 flex rounded-xl bg-zinc-900/60 hover:bg-zinc-900 transition-colors border border-zinc-900">
                       <div className="m-4 flex">
                         <div className="w-16 h-16 mt-1 rounded-full bg-white ">
                           <Image
@@ -73,7 +73,7 @@ export default function Trending() {
                         </div>
                         <div className="mt-2 ml-4">
                           {/* price */}
-                          <p className=" w-24 overflow-hidden h-8 font-bold">
+                          <p className=" w-24 overflow-hidden h-8 font-semibold">
                             ${data?.item.data.price}
                           </p>
                           <p className="text-xs text-gray-500 w-20 overflow-hidden h-8">

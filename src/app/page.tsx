@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="bg-zinc-950   text-zinc-100 z-0">
       <Header />
-      <div className="w-11/12  mx-auto">
+      <div className="w-10/12  mx-auto">
         <Trending />
         <CoinsTable />
       </div>

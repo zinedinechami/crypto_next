@@ -63,26 +63,30 @@ export default function Page({ params }: { params: { coinsId: string } }) {
   //add market cap, volume 24h, total suplly, max supply
   return (
     <>
-      {coinsData && (
-        <body className="  text-zinc-100 bg-zinc-950 z-0">
-          <Header />
+      <body className="  text-zinc-100 bg-zinc-950 z-0">
+        <Header />
 
-          <section className="flex w-11/12  mx-auto mt-10 ">
-            <div className="w-1/3 p-6 border-zinc-900 border  rounded-xl bg-zinc-900/60">
-              <h1>
-                # {coinsData?.market_cap_rank} {coinsData?.name}
-              </h1>
+        <section className="flex flex-col w-9/12  mx-auto mt-10 ">
+          {coinsData && (
+            <div className="w-full p-6 border-zinc-900 border  rounded-xl bg-zinc-900/60 ">
+              <div className="flex flex-row  space-x-10">
+                <h1>
+                  # {coinsData?.market_cap_rank} {coinsData?.name}
+                </h1>
 
-              <h1 className="text-3xl font-bold">$219992992</h1>
-              <p>Market Cap: {coinsData?.market_data.max_supply}</p>
-              <p>Volume 24H: {coinsData?.market_data.max_supply}</p>
-              <p>Total Supply: {coinsData?.market_data.max_supply}</p>
+                <h1 className="text-3xl font-bold">$219992992</h1>
+
+                <ul className="mt-2 flex space-x-5 ml-10">
+                  <li>Market Cap: {coinsData?.market_data.max_supply}</li>
+                  <li>Volume 24H: {coinsData?.market_data.max_supply}</li>
+                  <li>Total Supply: {coinsData?.market_data.max_supply}</li>
+                </ul>
+              </div>
             </div>
-
-            <div className="w-1/2  mx-auto    h-96  mb-20 "></div>
-          </section>
-        </body>
-      )}
+          )}
+          <div className="w-full  bg-red-300 mx-auto    h-96  mb-20 mt-20 "></div>
+        </section>
+      </body>
     </>
   );
 }

@@ -6,7 +6,7 @@ export default function Header() {
     <>
       <nav className="w-full flex h-16   sticky top-0 z-50  backdrop-blur-lg border-b border-zinc-900">
         <a href="/" className="mt-4 ml-6 flex">
-          <h1 className="  text-xl text-gray-50 font-bold">COIN_WATCH</h1>
+          <h1 className="  text-xl text-gray-50 ">COIN_WATCH</h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -23,7 +23,7 @@ export default function Header() {
         </a>
         <div className="absolute right-4 top-4">
           <input
-            className="h-8 w-72 rounded-lg mr-2 pl-2 text-xs bg-zinc-900/60 border border-zinc-900 "
+            className="h-8 w-72 rounded-lg mr-2 pl-2 text-xs bg-zinc-900/60 border border-zinc-900 hover:cursor-pointer"
             type="text"
             placeholder="Search coins..."
           />

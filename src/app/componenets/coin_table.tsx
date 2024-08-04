@@ -39,13 +39,13 @@ export default function CoinsTable() {
   return (
     <>
       <section className="pb-20   mx-auto">
-        <h1 className="text-lg mb-6 text-zinc-300 font-medium">
+        <h1 className="text-lg mb-6 text-zinc-300 ">
           CRYPTOCURRENCIES BY MARKET CAP
         </h1>
         {TableData && (
           <div className="rounded-lg overflow-hidden ">
-            <table className="w-full  bg-zinc-900/60   rounded-xl">
-              <thead className="text-zinc-500   border-b border-zinc-900 rounded-lg text-sm  ">
+            <table className="w-full bg-gradient-to-tr from-zinc-900 to-zinc-950   rounded-xl border border-zinc-900">
+              <thead className="text-zinc-500    rounded-lg text-sm  ">
                 <tr className="">
                   <th>#</th>
                   <th className="py-3 text-left">NAME</th>
@@ -60,7 +60,7 @@ export default function CoinsTable() {
                 {TableData.map((data, index) => {
                   return (
                     <>
-                      <tr className="hover:bg-zinc-900 transition-colors border-b border-zinc-900">
+                      <tr className="hover:bg-zinc-900 transition-colors ">
                         <td>{index + 1}</td>
                         <a href={"/coins/" + data?.id}>
                           <td className="py-5 flex text-center">
