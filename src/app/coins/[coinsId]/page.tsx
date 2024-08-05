@@ -68,7 +68,7 @@ export default function Page({ params }: { params: { coinsId: string } }) {
 
         <section className="flex flex-col w-9/12  mx-auto mt-10 ">
           {coinsData && (
-            <div className="w-full p-6 border-zinc-900 border  rounded-xl bg-zinc-900/60 ">
+            <div className="w-full p-6   rounded-3xl bg-zinc-900/60 ">
               <div className="flex flex-row  space-x-10">
                 <h1>
                   # {coinsData?.market_cap_rank} {coinsData?.name}
@@ -84,7 +84,7 @@ export default function Page({ params }: { params: { coinsId: string } }) {
               </div>
             </div>
           )}
-          <div className="w-full  bg-red-300 mx-auto    h-96  mb-20 mt-20 "></div>
+          <div className="w-full  rounded-3xl bg-zinc-900/60 mx-auto    h-96  mb-20 mt-6 "></div>
         </section>
       </body>
     </>

@@ -51,7 +51,7 @@ export default function Trending() {
               return (
                 <>
                   <a key={data?.item.id} href={"/coins/" + data?.item.id}>
-                    <article className="w-80   mb-4 flex rounded-xl bg-zinc-900/60 hover:bg-zinc-900 transition-colors border border-zinc-900">
+                    <article className="w-80   mb-4 flex rounded-3xl bg-zinc-900/70 hover:bg-zinc-900 transition-colors  ">
                       <div className="m-4 flex">
                         <div className="w-16 h-16 mt-1 rounded-full bg-white ">
                           <Image
@@ -60,7 +60,7 @@ export default function Trending() {
                             height={50}
                             quality={100}
                             alt={data?.item.name}
-                            className="rounded-full border border-zinc-400 "
+                            className="rounded-full border  "
                           />
                         </div>
                         <div className="ml-4 mt-2">

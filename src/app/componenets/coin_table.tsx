@@ -43,12 +43,12 @@ export default function CoinsTable() {
           CRYPTOCURRENCIES BY MARKET CAP
         </h1>
         {TableData && (
-          <div className="rounded-lg overflow-hidden ">
-            <table className="w-full bg-gradient-to-tr from-zinc-900 to-zinc-950   rounded-xl border border-zinc-900">
-              <thead className="text-zinc-500    rounded-lg text-sm  ">
+          <div className="rounded-xl overflow-hidden ">
+            <table className="w-full bg-zinc-900/60   rounded-3xl ">
+              <thead className="text-zinc-500    rounded-xl text-sm border-b border-zinc-900 ">
                 <tr className="">
                   <th>#</th>
-                  <th className="py-3 text-left">NAME</th>
+                  <th className="py-5 text-left">NAME</th>
                   <th>PRICE</th>
 
                   <th>CHANGE % 24h</th>
